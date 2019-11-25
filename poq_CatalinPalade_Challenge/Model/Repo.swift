@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+class Repo {
+    
+    let name: String
+    let description: String
+    
+    required init(name: String, description: String) {
+        self.name = name
+        self.description = description
+    }
+    
+    convenience init?(json: [String: Any]) {
+        let name = json["name"] as? String ?? ""
+        let description = json["description"] as? String ?? ""
+        
+        self.init(name: name, description: description)
+    }
+}

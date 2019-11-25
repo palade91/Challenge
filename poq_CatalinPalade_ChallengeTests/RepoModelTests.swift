@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import XCTest
+
+@testable import poq_CatalinPalade_Challenge
+
+class RepoModelTests: XCTestCase {
+    
+    func testValidModel() {
+        let repo = Repo(name: "Test Name", description: "Test Description")
+        XCTAssertNotNil(repo)
+    }
+    
+    func testJsonModel() {
+        let json = ["name" : "Json Test Name", "description" : "Json Test Description"]
+        let repo = Repo(json: json)
+        XCTAssertNotNil(repo)
+    }
+}

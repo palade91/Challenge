@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_poq_CatalinPalade_Challenge_poq_CatalinPalade_ChallengeUITests : NSObject
+@end
+@implementation PodsDummy_Pods_poq_CatalinPalade_Challenge_poq_CatalinPalade_ChallengeUITests
+@end
